@@ -13,11 +13,153 @@ body {
  barevny prechod nahore  #06d7c1
  barevny prechod dole    #50cc49
  zelena cara             #06d7c1
- oranzova                #f15f42
+ oranzova                
 
  PISMO
  Rubik - pouzite rezy pisma regular 400 a medium 500
  https://fonts.google.com/specimen/Rubik
+
+ font-family: 'Rubik', sans-serif;
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+html {
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: Rubik, sans-serif;
+}
+
+.zbozi {
+    max-width: 670px;
+    height: 440px;
+    margin: 100px auto;
+}
+
+.vizual, .detaily {
+    width: 50%;
+    height: 100%; 
+    padding: 30px;
+    position: relative;
+}
+
+.vizual {
+    background-image: linear-gradient(to bottom, #06d7c1, #50cc49);
+    float: left;
+    border-radius: 10px 0px 0px 10px;
+    color: white;
+}
+
+.detaily {
+    background-color: white;
+    float: left;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.bota {
+    position: absolute;
+    bottom: 5px;
+    left: -80px;
+}
+
+.slogan {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.cenovka {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    text-align: right;
+}
+
+.cena {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.zaruka {
+    font-size: 12px;
+}
+
+.nazev {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.produkt {
+    color: #959595;
+}
+
+.popis {
+    margin: 30px 0px 30px 0px;
+}
+
+.parametr {
+    padding: 30px 0px 0px 0px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    border-top: 1px solid #06d7c1;
+
+}
+
+.velikosti {
+    margin: 0;
+    padding: 0;
+}
+
+.velikosti li {
+    display: inline-block;
+    margin: 0px 18px 40px 0px;
+    padding: 3px;
+}
+ 
+.velikosti li:hover {
+    color: #f15f42;
+    font-weight: 500;
+    border: 1.5px solid #f15f42;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.vybrana {
+    border: 1.5px solid #f15f42;
+    border-radius: 50%;
+    color: #f15f42;
+    font-weight: 500;
+}
+
+.akce {
+    margin: 30px 0px 0px 0px;
+}
+
+.tlacitko {
+    padding: 15px 30px 15px;
+    background-color: #f15f42;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px #959595
+}
+
+.tlacitko {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+}
+
+.tlacitko:hover, .tlacitko:focus  {
+    background-color: #ad432e;
+}
+
+.tlacitko:active {
+    background-color: #06d7c1;
+}
